@@ -39,9 +39,9 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'corsheaders', 
     'whisper',
-    'corsheaders',
-    'rest_framework'
+    'rest_framework', 
 ]
 
 MIDDLEWARE = [
@@ -55,16 +55,8 @@ MIDDLEWARE = [
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
 
-CORS_ALLOW_CREDENTIALS = True
-CORS_ALLOWED_ORIGIN_REGEXES = [
-    r'http://localhost:3000$', 
-]
-
-CORS_ORIGIN_ALLOW_ALL = True
-
 CORS_ALLOWED_ORIGINS = [
     "http://localhost:3000",
-    "http://localhost:4000",
     "http://localhost:8000", 
 ]
 
@@ -105,7 +97,7 @@ DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
         'NAME': 'backendjist',
-        'USER': 'backendjist_admin',
+        'USER': 'joedonovan',
         'PASSWORD': 'backendjist',
         'HOST': 'localhost'
     }

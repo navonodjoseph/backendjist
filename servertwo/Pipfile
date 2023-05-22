@@ -7,10 +7,10 @@ name = "pypi"
 django = "*"
 psycopg2-binary = "*"
 djangorestframework = "*"
-django-cors-headers = "*"
 django-cors-middleware = "*"
 pydub = "*"
 requests = "*"
+django-cors-headers = "*"
 
 [dev-packages]
 
