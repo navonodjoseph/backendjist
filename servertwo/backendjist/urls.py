@@ -16,7 +16,9 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
+from transcribe.views import AudioUploadView
 
 urlpatterns = [
     path('admin/', admin.site.urls),
+     path('', AudioUploadView.as_view(), name="audio"),
 ]
