@@ -13,7 +13,8 @@ requests = "*"
 django-cors-headers = "*"
 pipenv = "*"
 install = "*"
-openai-whisper = "*"
+openai-whisper = {ref = "v20230314", git = "https://github.com/openai/whisper.git"}
+ffmpeg-python = "*"
 
 [dev-packages]
 

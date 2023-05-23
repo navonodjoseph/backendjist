@@ -57,11 +57,12 @@ class AudioUploadView(View):
             # response = requests.post(whisper_api_url, headers=headers, files=files)
             # transcribe audio using whisper
             
+            # result = whisper.transcribe(output_file_path)
+            # print(result['text'])
+
             model = whisper.load_model("base")
-            transcribe = model.transcribe('output_filepath')
-            print(transcribe['text'])
-
-
+            result = model.transcribe(output_file_path)
+            print(result["text"])
 
     
             

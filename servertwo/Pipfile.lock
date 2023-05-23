@@ -1,7 +1,7 @@
 {
     "_meta": {
         "hash": {
-            "sha256": "37df020fb5bcf0d241a40fee6cf92a07c0d67b02885c237bd8920f2fefa14ba8"
+            "sha256": "f06f8810b189c96ad80c989ac90eeced8615109db7733bae0a6bbac3832f68f4"
         },
         "pipfile-spec": 6,
         "requires": {
@@ -157,6 +157,7 @@
                 "sha256:65225db34627c578ef0e11c8b1eb528bb35e024752f6f10b78c011f6f64c4127",
                 "sha256:ac441a0404e053f8b6a1113a77c0f452f1cfc62f6344a769475ffdc0f56c23c5"
             ],
+            "index": "pypi",
             "version": "==0.2.0"
         },
         "filelock": {
@@ -372,11 +373,8 @@
             "version": "==1.24.3"
         },
         "openai-whisper": {
-            "hashes": [
-                "sha256:7a8e62334f97a8d143b439ae8ed6638d78f41ad921a0205382354004b7271725"
-            ],
-            "index": "pypi",
-            "version": "==20230314"
+            "git": "https://github.com/openai/whisper.git",
+            "ref": "6dea21fd7f7253bfe450f1e2512a0fe47ee2d258"
         },
         "pipenv": {
             "hashes": [
@@ -674,11 +672,11 @@
         },
         "typing-extensions": {
             "hashes": [
-                "sha256:5cb5f4a79139d699607b3ef622a1dedafa84e115ab0024e0d9c044a9479ca7cb",
-                "sha256:fb33085c39dd998ac16d1431ebc293a8b3eedd00fd4a32de0ff79002c19511b4"
+                "sha256:6ad00b63f849b7dcc313b70b6b304ed67b2b2963b3098a33efe18056b1a9a223",
+                "sha256:ff6b238610c747e44c268aa4bb23c8c735d665a63726df3f9431ce707f2aa768"
             ],
             "markers": "python_version >= '3.7'",
-            "version": "==4.5.0"
+            "version": "==4.6.0"
         },
         "urllib3": {
             "hashes": [

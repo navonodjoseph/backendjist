@@ -40,8 +40,9 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'corsheaders', 
-    'whisper',
+    'jist',
     'rest_framework', 
+    'whisper'
 ]
 
 MIDDLEWARE = [
