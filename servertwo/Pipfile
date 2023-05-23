@@ -11,8 +11,11 @@ django-cors-middleware = "*"
 pydub = "*"
 requests = "*"
 django-cors-headers = "*"
+pipenv = "*"
+install = "*"
+openai-whisper = "*"
 
 [dev-packages]
 
 [requires]
-python_version = "3.11"
+python_version = "3.9.9"
