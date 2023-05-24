@@ -15,6 +15,7 @@ import os
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
 
+ROOT_URLCONF = 'backendjist.urls'
 
 MEDIA_URL = '/media/'
 MEDIA_ROOT = os.path.join(BASE_DIR,'media')
@@ -69,8 +70,6 @@ CORS_ALLOW_METHODS = (
     "POST",
     "PUT",
 )
-
-ROOT_URLCONF = 'backendjist.urls'
 
 TEMPLATES = [
     {
@@ -156,3 +155,6 @@ FILE_UPLOAD_HANDLERS = [
     'django.core.files.uploadhandler.MemoryFileUploadHandler',
     'django.core.files.uploadhandler.TemporaryFileUploadHandler',
 ]
+# Configure Django App for Heroku.
+import django_on_heroku
+django_on_heroku.settings(locals())

@@ -6,6 +6,7 @@ from django.shortcuts import render
 from django.views import View
 from . models import Audio
 from . serializer import *
+from django.core.serializers import serialize
 from rest_framework.response import Response
 from django.http import JsonResponse
 # from .processAudio import process_wav_file
@@ -19,7 +20,9 @@ import whisper
 
 class AudioUploadView(View):
     def get(self, request): 
-        return JsonResponse({'Message': 'This is a GET request'})
+        audio_objects = Audio.objects.all()
+        audio_data = serialize("json", audio_objects)
+        return JsonResponse(audio_data, safe=False)
     
     def post(self, request):
         audio_file = request.FILES.get('audio')
