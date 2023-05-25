@@ -61,7 +61,9 @@ MIDDLEWARE = [
 
 CORS_ALLOWED_ORIGINS = [
     "http://localhost:3000",
-    "http://localhost:8000", 
+    "http://localhost:8000",
+    "https://jist-frontend.vercel.app",
+    "http://localhost:5000",
 ]
 
 CORS_ALLOW_METHODS = (
