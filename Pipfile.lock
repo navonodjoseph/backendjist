@@ -1,7 +1,7 @@
 {
     "_meta": {
         "hash": {
-            "sha256": "ce843ed31e034a6939d12c794f4b4981288fa780bbff9de1de4a0f37afc0ef50"
+            "sha256": "0dd4dccdef79076edf5260c303d6767ce6ab38f6e88c503288c0bad831cc156c"
         },
         "pipfile-spec": 6,
         "requires": {
@@ -387,7 +387,7 @@
                 "sha256:ecde0f8adef7dfdec993fd54b0f78183051b6580f606111a6d789cd14c61ea0c",
                 "sha256:f21c442fdd2805e91799fbe044a7b999b8571bb0ab0f7850d0cb9641a687092b"
             ],
-            "index": "pypi",
+            "markers": "python_version >= '3.8'",
             "version": "==1.24.3"
         },
         "openai-whisper": {
