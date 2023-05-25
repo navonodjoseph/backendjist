@@ -15,6 +15,7 @@ import io
 import os
 import datetime
 import whisper
+import requests
 
 
 class AudioUploadView(View):
