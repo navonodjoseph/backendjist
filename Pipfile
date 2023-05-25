@@ -29,6 +29,8 @@ numba = "==0.57.0"
 numpy = "==1.24.3"
 python-dotenv = "*"
 pydub = "*"
+requests = "*"
+openai-whisper = {git = "https://github.com/openai/whisper.git"}
 
 [dev-packages]
 
