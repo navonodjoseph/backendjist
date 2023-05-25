@@ -40,10 +40,10 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'corsheaders', 
+    'django-cors-headers', 
     'jist',
     'rest_framework', 
-    'whisper'
+
 ]
 
 MIDDLEWARE = [
