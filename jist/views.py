@@ -13,7 +13,6 @@ from django.http import JsonResponse
 from pydub import AudioSegment
 import io
 import os
-import requests
 import datetime
 import whisper
 
